@@ -22,6 +22,7 @@ def get_start_time(ticker):
     start_time = df.index[0]
     return start_time
 
+
 def get_ma15(ticker):
     """15일 이동 평균선 조회"""
     df = pyupbit.get_ohlcv(ticker, interval="day", count=15)
